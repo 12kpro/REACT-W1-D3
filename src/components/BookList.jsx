@@ -40,7 +40,7 @@ class BookList extends Component {
             </Form.Group>
           </Col>
         </Row>
-        <Row lg={6} className="mb-4">
+        <Row lg={4} className="mb-4">
           {this.state.books.map((book, index) => (
             <SingleBook
               key={`book-${this.props.title}-${index}`}
