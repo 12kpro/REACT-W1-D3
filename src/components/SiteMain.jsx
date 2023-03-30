@@ -1,7 +1,7 @@
 import { Container, Nav } from "react-bootstrap";
 import Welcome from "./Welcome";
 import SiteFooter from "./SiteFooter";
-import AllTheBooks from "./AllTheBooks";
+import BookList from "./BookList";
 import fantasy from "../data/fantasy.json";
 import history from "../data/history.json";
 import horror from "../data/horror.json";
@@ -12,11 +12,11 @@ const SiteMain = (props) => (
   <>
     <Container>
       <Welcome />
-      <AllTheBooks title="fantasy" books={fantasy} />
-      <AllTheBooks title="history" books={history} />
-      <AllTheBooks title="horror" books={horror} />
-      <AllTheBooks title="romance" books={romance} />
-      <AllTheBooks title="scifi" books={scifi} />
+      <BookList title="fantasy" books={fantasy} />
+      <BookList title="history" books={history} />
+      <BookList title="horror" books={horror} />
+      <BookList title="romance" books={romance} />
+      <BookList title="scifi" books={scifi} />
       <SiteFooter>
         <Nav.Item>
           <Nav.Link href="#">Active</Nav.Link>
